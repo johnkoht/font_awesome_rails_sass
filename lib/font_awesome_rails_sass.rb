@@ -1,6 +1,11 @@
 require "font_awesome_rails_sass/version"
-require "font_awesome_rails_sass/engine"
+
+unless defined?(Sass)
+  require 'sass'
+end
 
 module FontAwesomeRailsSass
-  # Your code goes here...
+  if defined?(Rails) && defined?(Rails::Engine)
+    require "font_awesome_rails_sass/engine"
+  end
 end
