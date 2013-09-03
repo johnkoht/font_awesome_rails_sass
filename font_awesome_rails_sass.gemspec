@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["john@kohactive.com"]
   spec.description   = "Font-Awesome Sassified"
   spec.summary       = "Font-Awesome Sassified"
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/johnkoht/font_awesome_rails_sass"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
